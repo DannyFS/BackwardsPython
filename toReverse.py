@@ -1,11 +1,11 @@
 import os, sys
 
 def main():
-    filePath = os.getcwd()
     fileName = sys.argv[1]
 
     if fileName[-3:] != ".py":
         return
+    
     os.rename(fileName, fileName[:-2] + "bpy")
     fileName = fileName[:-2] + "bpy"
 
