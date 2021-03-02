@@ -1,7 +1,6 @@
-import os, sys
+import sys
 
 def main():
-    filePath = os.getcwd()
     fileName = sys.argv[1]
 
     if fileName[-4:] != ".bpy":
